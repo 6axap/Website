@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+  <title>CodePen - Portfolio_proto</title>
+  
+  
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+</style>
+<script>
+  var nIntervId;
+
+  function changeColor() {
+    nIntervId = setInterval(flashText, 10);
+  }
+
+  function flashText() {
+    var oElem = document.getElementById('my_box');
+    if(oElem.style.color === 'red') {
+      oElem.style.color = 'blue'
+    } else {
+      oElem.style.color = 'red'
+    }
+  }
+
+  function stopTextColor() {
+    clearInterval(nIntervId);
+  }
+</script>
+</head>
+
+<body onload="changeColor();">
+<script src="jquery-3.6.0.js"></script>
+<script src="script.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+<header class="page-header"></header>
+<div id="cover">
+  <h1 class="main_title">PORTFOLIO</h1>
+  <button class="downButton">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <g fill="#FFF" fill-rule="evenodd">
+        <circle cx="25" cy="25" r="25" fill="#000000" opacity="0.2"></circle>
+        <path d="M13 20.752c0 .188.754 1.002.88 1.128 3.77 3.759 7.288 7.831 8.984 9.71 1.005 1.128 1.759 2.256 2.136 2.256.377 0 1.13-1.128 2.136-2.255 1.696-1.88 5.215-5.952 8.984-9.711.126-.126.88-.94.88-1.128 0-.439-.126-.752-.628-.752C35.24 20 26.13 27.08 25 28.082 23.87 27.08 14.76 20 13.628 20c-.502 0-.628.313-.628.752"></path>
+    </g>
+</svg>
+</button>
+<div id="my_box">
+  <p>Hello World</p>
+</div>
+<button onclick="stopTextColor();">Stop</button>
+</div>
+<menu id="mainmenu" class="">  
+<menuitem class="item">3d</menuitem>
+<menuitem class="item">analog</menuitem>
+<menuitem class="item">digital</menuitem>
+<menuitem class="item">photography</menuitem>
+<menuitem class="item">gallery</menuitem>
+<menuitem class="item">about me</menuitem>
+</menu> 
+<div id="container">
+  <div class="article">
+    <div id="article-left">
+      <h1>Engel</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <button class='alert'>Alert!</button> 
+    </div>
+
+    <div id="article-right">
+      <img src="engel.png" id="article-img" width="500"> 
+    </div>
+  </div>
+</div>
+</body>
+</html>

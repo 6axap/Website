@@ -1,0 +1,44 @@
+<!doctype html>
+<link rel="stylesheet" href="style.css">
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+
+<body>
+    <!-- <a href="http://jquery.com/">jQuery</a> -->
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+ 
+    // Your code goes here.
+  $( "<button class='alert'>Alert!</button>" ).appendTo( document.body );
+});
+ // Sets up click behavior on all button elements with the alert class
+ // that exist in the DOM when the instruction was executed
+ $( "button.alert" ).on( "click", function() {
+     console.log( "A button with the alert class was clicked!" );
+     window.alert( "HEHEHEH!" )
+ });
+
+ // Now create a new button element with the alert class. This button
+ // was created after the click listeners were applied above, so it
+ // will not have the same click behavior as its peers
+
+    </script>
+
+<div class="article">
+  <div id="article-left">
+    <h1>Engel</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <button class='alert'>Alert!</button> 
+  </div>
+
+  <div id="article-right">
+    <img src="engel.png" id="article-img" width="500"> 
+  </div>
+</div>
+
+</body>
+</html>
