@@ -1,0 +1,18 @@
+{
+  "trigger": true,
+  "modules": [
+    "add-to-group"
+  ],
+  "parentResource": "jinportfoliobdeb9808",
+  "functionName": "jinportfoliobdeb9808PostConfirmation",
+  "resourceName": "jinportfoliobdeb9808PostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/opt/homebrew/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "jinportfoliobdeb9808PostConfirmation",
+  "skipEdit": true,
+  "GROUP": "admin",
+  "enableCors": false
+}
